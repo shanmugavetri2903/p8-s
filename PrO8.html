@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biosphere - Medical Innovations</title>
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #0878c9;
+    --nav-color: #064b80;
+    --card-color: #f0f8ff;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaf5ff;
+    color: #234;
+}
+/* Header */
+header {
+    background: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 26px;
+    font-weight: bold;
+}
+/* Navigation */
+nav {
+    background: var(--nav-color);
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: yellow;
+}
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #b5cbdc;
+}
+/* Headings */
+h2 {
+    color: var(--main-color);
+    text-align: center;
+}
+.intro {
+    text-align: center;
+    line-height: 1.7;
+    padding: 10px;
+}
+/* Medical Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+.card {
+    background: var(--card-color);
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    transition: 0.4s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 15px #999;
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card h3 {
+    color: var(--main-color);
+}
+.card p {
+    font-size: 14px;
+}
+/* Footer */
+footer {
+    background: var(--nav-color);
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+/* Laptop View - Blue Theme */
+@media only screen and (min-width: 769px) {
+    :root {
+        --main-color: #0878c9;
+        --nav-color: #064b80;
+        --card-color: #f0f8ff;
+    }
+    body {
+        background: #eaf5ff;
+    }
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Tablet View - Green Theme */
+@media only screen and (min-width: 481px)
+and (max-width: 768px) {
+    :root {
+        --main-color: #239b56;
+        --nav-color: #176b3a;
+        --card-color: #effaf1;
+    }
+    body {
+        background: #e8f8ed;
+    }
+    header {
+        font-size: 22px;
+        padding: 20px;
+    }
+    .container {
+        margin: 15px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav a {
+        margin: 8px;
+    }
+}
+/* Mobile View - Red Theme */
+@media only screen and (max-width: 480px) {
+    :root {
+        --main-color: #e53935;
+        --nav-color: #a71919;
+        --card-color: #fff0f0;
+    }
+    body {
+        background: #ffebee;
+    }
+    header {
+        font-size: 18px;
+        padding: 18px;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+    .container {
+        margin: 10px;
+        padding: 12px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .card img {
+        height: 200px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .intro {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    BIOSPHERE - MEDICAL INNOVATIONS
+</header>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#innovations">Innovations</a>
+    <a href="#research">Research</a>
+</nav>
+<div class="container" id="home">
+    <h2>Biotechnology-Driven Medical Innovations</h2>
+    <p class="intro">
+        Biotechnology is transforming modern healthcare through
+        advanced research, innovative treatments and medical
+        discoveries. It helps scientists develop better solutions
+        for diagnosing and treating diseases.
+    </p>
+    <h2 id="innovations">Medical Innovations</h2>
+    <div class="gallery">
+        <div class="card">
+            <img src="biosphere1.png" alt="Gene Therapy">
+            <h3>Gene Therapy</h3>
+            <p>
+                Uses genetic techniques to treat
+                inherited diseases.
+            </p>
+        </div>
+        <div class="card">
+            <img src="biosphere2.png" alt="Stem Cell Therapy">
+            <h3>Stem Cell Therapy</h3>
+            <p>
+                Uses stem cells to repair
+                damaged tissues.
+            </p>
+        </div>
+        <div class="card">
+            <img src="biosphere3.jpg" alt="Vaccine Technology">
+            <h3>Vaccine Technology</h3>
+            <p>
+                Develops vaccines to prevent
+                infectious diseases.
+            </p>
+        </div>
+        <div class="card">
+            <img src="biosphere4.jpg" alt="Personalized Medicine">
+            <h3>Personalized Medicine</h3>
+            <p>
+                Provides treatments based on
+                individual medical information.
+            </p>
+        </div>
+    </div>
+    <h2 id="research">Future of Biotechnology</h2>
+    <p class="intro">
+        Biotechnology creates new possibilities in healthcare
+        through advanced treatments, early disease detection
+        and innovative medical research.
+    </p>
+</div>
+<footer>
+    © 2026 Biosphere | Biotechnology for Better Healthcare
+</footer>
+</body>
+</html>
